@@ -27,8 +27,7 @@ You can enter the following command in your terminal```node -v```
 ```npm -v```
 .<br>
 <br>
-2. Select your work place by
- ```cd <your path>```
+2. Select your work place by ```cd <your path>```
 .<br>
 <br>
 3.Clone or my repo by ```git clone <repo>``` or download the zip.<br>
