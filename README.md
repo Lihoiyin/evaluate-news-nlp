@@ -35,7 +35,7 @@ npm i -D style-loader node-sass css-loader sass-loader
 npm i -D clean-webpack-plugin
 npm i -D html-webpack-plugin
 npm i -D mini-css-extract-plugin
-npm i -D optimize-css-assets-webpack-plugin/css-minimizer-webpack-plugin terser-webpack-plugin
+npm i -D css-minimizer-webpack-plugin terser-webpack-plugin
 ```
 5. Start the project, enter the command in your terminal:
 1. `npm run build-prod` it will generate a "dist" file that created by build tool.
