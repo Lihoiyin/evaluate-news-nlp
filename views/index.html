@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Evaluate-News-Nlp</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&family=Style+Script&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <header>
+            <div class="header">
+                Evaluate-News-Nlp
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <form class="" onsubmit="return Client.handleSubmit(event)">
+                    <input id="link" type="text" name="input"  placeholder="Enter the link you want to analyze">
+                    <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+                </form>
+            </section>
+
+            <section class="output">
+                <strong>polarity:</strong>
+                <div id="polarity"></div>
+                <strong>agreement:</strong>
+                <div id="agreement"></div>
+                <strong>subjectivity:</strong>
+                <div id="subjectivity"></div>
+                <strong>confidence:</strong>
+                <div id="confidence"></div>
+                <strong>irony:</strong>
+                <div id="irony"></div>
+            </section>
+        </main>
+
+        <footer>
+            
+        </footer>
+        <script>
+            //copy from Udacity
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+           </script>
+    </body>
+</html>
